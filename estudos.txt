@@ -1,0 +1,500 @@
+todos os programas que já veem pronto no systema são programas built-ins
+
+Tipos primitivos
+int 3 5 8282 8383 930
+floot 4.4 5.9 9.2 0.2
+bool True False
+str 'ola' '8.0' ' '
+n1 = int(input('numero') int é o tipo primitivo
+tipo primitivo é a class de algo
+
+print(''), a.is()) retorna true ou false
+a.isupper())
+a.istitle())
+....
+ toda string tem upper, title, lower...
+ 
+print('algo {}'.format())
+{0} {1} {2} {3}
+começa no zero
+type()) dizer o tipo
+
+use isto (:.2f) para diminuir um número quebrado
+.format(pow(n, (1/2)))
+
+Ordem de Precedência
+1. () "Da a prioridade"
+2. **
+3. * / // %
+4. + -
+
+
+Operadores aritméticas
+5+2=7
+5-2=3
+5*2=10
+5/2=2.5-2
+5**2=25
+5//2=2 5|2
+5%2=1
+
+
+"class =(1 sinal de igual)" a class anterior ou número recebe
+==(dois iguais, significa igual)
+
++ Adição
+- Subtração
+* Multiplicação
+/ Divisão
+** Potência(numero elevado a outro numero ex: 3²)
+/ Divisão 222.22
+// Divisão inteira 22
+% Resto da divisão (tudo que sobra)
+
+3*(5+4)**2=243
+numero ** (1/2) raiz quadrada
+
+calcular porcentagem(%)
+ex: quero 16% de 893 reais
+893*16/100 893 * 16% de 100%
+para calcular faça 893*16/100=142,88
+que vai ser igual 142,88
+
+10 *5 / 100
+
+descontar algo
+preco - (preco * 5 / 100)
+aumentar algo
+preco + (preco * 5 / 100)
+
+
+Ultilizando módulos
+
+import algo(Ex: import random, import math)
+pega toda a biblioteca
+
+from math import trunc
+import 
+na biblioteca math pegue trunc
+
+como calcular o ano e a idade real
+from datetime import date
+
+idade = date.today().year / ano
+
+random
+uma ação aleatória
+variável = random.funcao(limitador)
+
+choice() escolhe um elemento aleatório
+randit um número aleatório
+
+usando choice para selecionar algo de uma lista
+escolha = ('Pedra', 'Papel', 'Tesoura')
+escolha é a lista
+ppt = random.choice(escolha)
+ppt é a escolha random da lista
+
+todos os nomes e texto, ou string deve está entre ' aspas simples ou " duplas.
+
+Para usar o randit como opção de escolha
+faça:
+ex:
+    itens = ('P', 'D', 'T') coloque letras, palavras ou outras coisas entre aspas
+para que seja selecionado.
+
+para que o randit selecione um dos itens:
+ex: 
+    itens = ('P', 'D', 'T')
+    
+    pc = randit() 
+caso queira usar apenas o randit use from random import randit
+  
+    pc = randit(0, 2) 
+    ele vai escolher de 0 a 2, então 0,1,2
+    
+então para isso faça.
+
+print('pc escolheu {}'.format(pc)) 
+ele vai mostra os números 
+
+print('pc escolheu {}'.format(itens[pc])) 
+ele vai atribuir a variável "itens" ao "pc"
+
+
+
+Funções
+
+Definer uma função para não ter que repetir código 
+def nome_da_funcao(oque_ela_recebe):
+
+como chamar a função?
+nome_da_funcao()
+
+ex:
+largura = 3
+altura = 4
+#
+def area_do_rectangulo(largura, altura):
+    area = largura * altura
+    return
+
+area_do_rectangulo(3, 4)
+o 3 e o 4 vai adicionar um valor a largura e altura na ordem
+
+
+
+Fatiamento
+
+frase[9:19] 9 : (dois pontos) na frente de um número significa que ele vai pegar tudo que tem nesse número para frente. : (dois pontos) antes do número ele vai pegar tudo antes desse número para tras e o "2" 0:0:2 vai pular casa e selecione a letra
+
+frase[3] indetifica a letra no indice 9
+
+análise
+
+len(frase)
+vai mostrar o número total dentro de uma frase
+
+frase.count('o')
+vai contar quantas vezes existe a letra no exemplo letra 'o'
+
+frase.count('o', 0, 13)
+
+entre 0 a 13 procure 'o'
+
+frase.find('deo')
+mostrar em que momento começou na posição
+se não tiver a string/string nao existe e retorna -1
+
+ooperador 'in'
+'Curso' in frase
+existe a string 'curso' na variável frase
+se sim ele retorna True se não False
+
+frase.replace('python', 'android')
+replace substituir python por android
+
+salvar
+frase = frase.replace('python', 'android')
+
+transformação de string
+frase.upper() minúsculo para maiusculo
+frase.lower() maiusculo para minúsculo
+não esquecer os ()
+frase.capitalize() a primeira letra maiuscula
+frase.title() as primeiras letras dps do espaço ficam maiuscula
+frase.strip() remove todos os espaços inúteis do começo e do final
+frase.rstrip() espaços da direita
+frase.lstrip() espaços da esquerda
+print(frase.lower().find('algo')
+
+frase = 'curso em video'
+divido = frase.split() a string curso vai ficar split
+print(dividido[0]) [0] o '0' é o primeiro item da lista no caso 'curso'
+print(dividido[0] [3])
+video sendo o 2 e a letra 'e' de video sendo o 3
+tudo começa com 0 depois de split só não as lista
+
+divisão
+frase.split() onde tem espaço uma nova lista/indexação vai ser criada
+sem split
+|curso em video python|
+123456789101112131...21
+
+com split
+|curso| |em| |video| |python|
+|01234| |01| |01234| |012345|
+|  1  | | 2| |  3  | |   4  |
+
+'-'.join(frase)
+vai juntar tudo e por o '-' onde tem espaço
+
+jeito certo junto com o print e Fatiamento
+
+frase = 'alguma coisa'
+print(frase[0:0:0])
+
+frase = 'alguma coisa'
+print(frase.upper().count('O')) junta com .
+
+usar o len
+nome = str(input('&Ajjqja'))
+print(len(nome))
+outra forma
+print('string {}'.format(len(nome)))
+
+print('string {}'.format(len(nome) - nome.count(' ')))
+vai contar e remover espaços com sinal de -
+
+print('Seu ultimo nome é: {}'.format(n[len(n)-1])) vai contar o ultimo nome - 1, exemplo: 
+  roberio bonfim de oliveira
+    0       1    2    3
+
+frase.count('o', 0, 13)
+pesquisar se existe 'o' do 0 ao 13(sendo 1ue 13 não existe, então sera 12, ultimo número nao conta)
+
+texto longo sem muitos print
+basta usar 3 aspas 
+print("""text wuehw eue eveus ehe he ehbehe ehebw """)
+
+pode se usar o end='' no final de print para não ter final
+
+como se usar:
+    print('algo xxxxxzxxzx', end='')
+    print('oi')
+    
+O 'oi' do ultimo print vai para a linha do primeiro print que está usando end=''
+
+
+
+Replicar Strings
+print('=' * 12)
+entre 'aspas' é o que vai ser multiplicado, e * 23 é as vezes que vai ser multiplicado
+
+
+
+Condições 
+if varial =>3:
+conteúdo 
+else:
+conteúdo
+elif varil < 3:
+  conteudo
+elif varial > 3:
+  conteudo
+
+teste
+if >= 1:
+else:
+
+if <= 1:
+else:
+    
+pode ter apenas um if, um if e um else, um if e elif quantos quiser
+
+print('conteúdo'if varial=>3 else 'conteúdo')
+print('fim')
+
+pode se usar == e == 
+
+estrutura simples
+apenas if a == b
+
+estrutura composta
+com if e else
+ex:
+  if a == b:
+  excuta
+  else:
+    executar
+
+calcular impa e par
+num % 2
+todo número restante de 1 é IMPAR e 0 é PAR
+
+estrutura simples
+ex;
+km = float(input('Qual é a distância da viagem? '))
+preco = distancia * 0.50 if km < = 200 else distancia * 0.45
+
+pode se usar 
+if 2 > media >= 5:
+como se ler?
+se media é maior igual a 5 só que a media é menor que sete
+    
+ Calcular triângulos
+ reta 1, reta 2, reta 3
+ O r1 tem que ser menor, doque a soma das 2 retas
+ ex:
+     r1 = 3
+     r2 = 7
+     r3 = 3
+A soma de r1 + r2 tem que ser maior que r3, no caso 3
+então 
+   r1 + r2 forma um triângulo por que a soma dos 2 é maior que a r3
+
+
+
+Usar Cores no terminal
+Como usar o padrão ANSI
+
+modo 1
+print('\033[1;30;41mFrase\033[m')
+
+sempre começa \033[style;text;back/m \033[m
+vermelho '\033[31mOi\033[m'
+
+modo 2
+v = goku
+print('Oi eu sou o {}goku{}!'.format('\033[33m', goku, '\033[m'))
+
+modo 3 #beta
+cor = {'limpa';'\033[m', 
+      'vermelho';'\033[31m'}
+como usar
+print('Oiii {}Gato{}'.format(cor[vermelha], cor[limpa]))
+
+style
+0 - Normal()
+1 - Bold
+4 - Underline(sublinhado)
+7 - inverter entre texto e fundo
+
+text
+30 - Branco
+31 - Vermelho
+32 - Verde
+33 - Amarelo
+34 - Azul
+35 - Mangeta
+36 - Ciano (Azul Claro)
+37 - Cinza
+
+back
+40 - Branco
+41 - Vermelho
+42 - Verde
+43 - Amarelo
+44 - Azul
+45 - Mangeta
+46 - Ciano (Azul Claro)
+47 - Cinza
+
+palavras reservadas da linguagem, como um vocabulário próprio.
+and del from None True as elif global nonlocal try  assert else if not while  break except import or with  class False in pass yield  continue finaly is raise def  for lambda return
+
+Constantes
+O Python possuiu poucas constantes imbutidas. as mais usadas são True, False e None
+True e False são valores booleanos que representam verdadeiro e falso
+Ex:
+no console Python
+1 == 1
+True
+1 == 4
+False
+
+pode-se usar o comando bool() para fazer verificações
+ex:
+  bool(4 == 4)
+  True
+  bool(7 == 9)
+  False
+Ele não recebe apenas expressões, ele pode receber qualquer coisa e vai responder se tal valor é considerado True or False
+
+lembrando que:
+>(maior que) , <(menor que) , ==(igual)
+não são aritméticas, são conhecidos por operações de comparação.
+
+Operações de Comparação
+a == b (a igual a b)
+a < b (a menor que b)
+a > b (a maior que b)
+a >=b (a maior ou igual a b)
+a <= b (a menor ou igual a b)
+a != b (a diferente de b) a ! = b 'Sem espaços'
+
+a is b (True se a e b são idênticos)
+a is not b (True se a e b não são identicos)
+a in b (True se a é membro de b)
+a not in (True se a não é membro de b)
+
+É importante saber que os operadores  ==  e  is  funcionam de maneira diferente. Vamos usar o exemplo de duas listas e checar se elas são iguais:
+  
+  
+  
+Loops
+while 
+repetir o código, desde a função
+ex:
+    while True:
+    
+    print('fim')
+    
+    indentação e super importante o while
+    
+pode se usar um valor atribuido a outro valor e da um número as 2
+ex:
+    e = a = 0
+    
+o código acima é o mesmo que digitar o de baixo
+    e = 0
+    a = 0
+
+pode se usar True ou False em uma variavel para fazer um Loop
+ex:
+    var = False
+    while not var:
+        print('novamente')
+        
+então, while: enquanto var for False repetir isso:
+    
+    
+    
+Condições Aninhadas
+tudo que estiver sem indentação vai ser executado
+são tudo que está junto
+
+if a = b:
+    print()
+elif a > b:
+    print()
+elif a < b:
+    print()
+else:
+    print()
+    
+
+
+Converso de base
+num = int(input(''))
+print('numero convertido{}'.format(a, bin(num)))
+
+bin() binario
+hex() Hexadecimal 
+oct() octal
+
+
+
+Laços de Repetições
+O for é usado pra fazer Repetições
+com usa:
+ex:
+    for nome da variavel in range(quantidade do lop)
+        print('algo') tudo que vai executar
+    print('algo') o que vai executar depois do loop concluido
+
+usando if com for
+
+    for nome da variavel in range(quantidade do lop)
+        if v == 1:
+            print('algo') tudo que vai executar
+    print('algo') o que vai executar depois do loop concluido
+    
+O ultimo numero não é incluido
+ex:
+    for i in range(0, 3)
+    
+vai de 0, a 2 pq 3 nao conta 
+
+
+
+Acumuladores
+soma = 0
+count = 0
+a soma vai começar por 0, isso quer dizer que o valo inicial é zero
+
+ex:
+
+cont = 0
+soma = 0
+for c in range(1, 501, 2):
+    if c % 3 == 0:
+        cont = cont + 1 
+        soma = soma + c
+        
+soma = soma + algo
+soma vai receber o que ela tem, no caso 0 e se os numeros
+ou letras da variavel c forem dividido por 3 e restar 0 entao
+ele vai soma os numeros para adicionar um valor a soma
+
+
